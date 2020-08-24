@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+.app__navbar {
+  height: 50px;
+  border-bottom: 1px solid #dde8fa;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.app__navbar > img {
+  width: 100px;
+  object-fit: contain;
+  cursor: pointer;
+  margin-left: 10vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__navbar .MuiSvgIcon-root {
+  font-size: 18px;
+  margin-right: 10vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 625px) {
+  .app__body {
+    display: flex;
+    flex-direction: column;
   }
 }
