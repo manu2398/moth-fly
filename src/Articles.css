@@ -11,10 +11,8 @@
   padding: 10px 0 5px 50px;
   font-size: medium;
   text-transform: capitalize;
-  position: fixed;
-  background-color: #fff;
-  width: 100%;
-  z-index: 999;
+  margin-top: 50px;
+  position: sticky;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -31,5 +29,8 @@
 @media (max-width: 625px) {
   .articles {
     flex: 1;
+  }
+  h2 {
+    margin-top: 0px;
   }
 }
